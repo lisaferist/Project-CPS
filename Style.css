@@ -1,0 +1,264 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTLakes-Medium", sans-serif;
+    background-color: #FDFDFD;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+h1 {
+    display: inline-block;
+    font-family: "TTLakes-Bold", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+}
+.page-header {
+    width: 100%;
+    margin: 0;
+}
+
+
+.page-header__icon-bar, .icon-bar__icons-left, .icon-bar__icons-right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.page-header__icon-bar {
+    height: 88px;
+    border-bottom: 1px solid #D0FFF5;
+}
+
+.icon-bar__required-icons {
+    border-left: 2px solid whitesmoke;;
+}
+
+.icon-bar__logo {
+    width: 100px;
+    margin: 5px;
+}
+
+.icon-bar__icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.icon-bar__button {
+    background-color: white;
+    border: none;
+}
+
+.icon-bar__text {
+    display: none;
+}
+
+.nav-bar {
+    background-color: #FDFDFD;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 60px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.page-header__title-decorate {
+    font-size: 40px;
+    border-right: 5px solid #00FFC4;
+    border-radius: 5px;
+    /*border-left: 5px solid mediumturquoise;*/
+    /*border-top: 5px solid white;*/
+    /*border-bottom: 5px solid white;*/
+}
+
+.nav-bar__item {
+    display: inline-block;
+    width: auto;
+    margin: 10px;
+    padding: 9px;
+    color: #999999;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-bar__item-active {
+    border: 2px solid #BBFFEC;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.page-main {
+    display: flex;
+}
+
+.page-main__text {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.page-main__read-more{
+    margin: 10px;
+}
+
+.read-more__more-button {
+    background-color: #FDFDFD;
+    border: none;
+    font-size: 16px;
+    font-family: 'TTLakes-Medium', sans-serif;
+    margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        min-width: 320px;
+    }
+
+    .icon-bar__optional-icons {
+        display: none;
+    }
+
+    .page-header__icons--media-width--1120px {
+        display: none;
+    }
+    .page-main {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
+
+    .icon-bar__optional-icons {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .icon-bar__icons-left {
+        margin-left: 15px;
+    }
+    .icon-bar__required-icons {
+        margin-right: 15px;
+        padding-left: 15px;
+    }
+    .icon-bar__logo {
+        width: 125px;
+        padding-left: 20px;
+        margin-left: 5px;
+        border-left: 2px solid whitesmoke;
+    }
+
+    .page-header__icons--media-width--1120px {
+        display: none;
+    }
+    .page-header__title {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .nav-bar {
+        overflow-x: scroll;
+    }
+
+    .page-main__image {
+        border-radius: 5px;
+        margin-right: 30px;
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .page-main__text-block{
+        width: 50%;
+    }
+
+    .page-main__text {
+        height: 208px;
+    }
+
+}
+
+@media (min-width: 1120px) {
+    .container {
+        min-width: 1120px;
+    }
+
+    .icon-bar__icons-left, .icon-bar__optional-icons {
+        display: none;
+    }
+
+    .icon-bar{
+        float: right;
+        background-color: #FDFDFD;
+        border: none;
+    }
+    .icon-bar *{
+        background-color: inherit;
+    }
+    .icon-bar__required-icons{
+        border: none;
+    }
+    .icon-bar__text {
+        display: inline-block;
+        font-size: 16px;
+        font-family: "TTLakes-Medium", sans-serif;
+        font-weight: bold;
+        margin-right: 15px;
+        vertical-align: center;
+        color: black;
+    }
+    .icon-bar__icon {
+        vertical-align: center;
+    }
+
+    .page-header__title {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .nav-bar {
+        flex-wrap: wrap;
+        height: auto;
+        overflow: clip;
+    }
+
+
+    .page-main__image {
+        border-radius: 5px;
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .page-main__text-block{
+        width: 50%;
+    }
+
+    .page-main__text {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+}
