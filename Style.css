@@ -202,7 +202,7 @@ body {
         flex-wrap: wrap;
         height: auto;
         overflow: clip;
-        margin-left: 35px;
+        padding-left: 35px;
     }
     .nav-bar__item:first-child{
        margin-left: 0;
