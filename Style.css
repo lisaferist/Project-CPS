@@ -51,7 +51,7 @@ body {
     height: 40px;
 }
 
-.icon__text, .icon--optional, .icon-bar__decoration:nth-child(2) {
+.icon__text, .icon--importance--optional, .icon-bar__decoration:nth-child(2) {
     display: none;
 }
 
@@ -92,7 +92,7 @@ body {
 .nav-bar__item:first-child{
     margin-left: 20px;
 }
-.nav-bar__item--active {
+.nav-bar__item--interaction--active {
     border: 2px solid #BBFFEC;
     border-radius: 7px;
     background-color: white;
@@ -130,7 +130,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .icon--optional, .icon-bar__decoration:nth-child(2) {
+    .icon--importance--optional, .icon-bar__decoration:nth-child(2) {
         display: inline-block;
     }
     .icon-bar__icon:nth-child(6){
